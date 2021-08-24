@@ -1,0 +1,15 @@
+plugins {
+    // Apply the java-library plugin for API and implementation separation.
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://hub.spigotmc.org/nexus/content/repositories/public/"
+    }
+}
+
+dependencies {
+    implementation 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
+}
